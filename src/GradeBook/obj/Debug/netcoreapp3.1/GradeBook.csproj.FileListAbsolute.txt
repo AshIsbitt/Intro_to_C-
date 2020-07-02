@@ -1,0 +1,12 @@
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.deps.json
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.json
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.dev.json
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.dll
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.pdb
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csprojAssemblyReference.cache
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.AssemblyInfoInputs.cache
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.AssemblyInfo.cs
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csproj.CoreCompileInputs.cache
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.dll
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.pdb
+/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.genruntimeconfig.cache
