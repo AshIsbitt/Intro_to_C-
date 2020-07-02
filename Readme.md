@@ -1,4 +1,4 @@
-#C sharp Fundamentals
+# C sharp Fundamentals
 
 Follow along with my notes: (https://app.pluralsight.com/paths/skills/csharp)
 
