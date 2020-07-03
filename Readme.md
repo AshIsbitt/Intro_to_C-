@@ -67,3 +67,43 @@ else {
 }
 ```
 
+Define a variable:
+
+```csharp
+int varName;
+varName = 4
+
+string varToo = "Hello World";
+
+var varThree = "Howdy";
+```
+
+Note that you can also define a value on the same line.
+You can also just use the type "var" for the code to implicitly figure out what the variable type is. This is down to personal preference when writing code.
+
+```csharp
+// Create an array of 3 items of type Double
+double[] numbers = new double[3];
+numbers[0] = 14.1
+```
+
+This creates an array in a specific data type. Note that this is the same as the "string[] args" that is in every method call. You can write into certain elements as seen as well. 
+
+You can also straight up create a new array like so:
+
+```csharp
+var numbers = new double[3] {12.7, 10.3, 6.1}
+```
+
+This allows for you to shorter and more readable code.
+
+Iterating throguh an array:
+
+```csharp
+foreach(double number in numbers) {
+	do something
+}
+```
+
+The data needs to be correct in the brackets, although you can make use of the "Var" keyword instead of "double"
+

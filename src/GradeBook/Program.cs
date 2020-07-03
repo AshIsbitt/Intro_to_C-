@@ -6,6 +6,15 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
+
+        	//define a var
+        	//float x = 34.1;
+        	//float y = 4.1;
+        	//var result = x + y;
+
+			double[] numbers = new double[3];
+        	numbers[0] = 12.7;
+
         	//IF statement
         	if(args.Length > 0) {
 
@@ -18,6 +27,8 @@ namespace GradeBook
 	        else {
 	        	Console.WriteLine("Hello!");
 	        }
+
+
         }	
     }
 }
