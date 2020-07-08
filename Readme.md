@@ -107,3 +107,13 @@ foreach(double number in numbers) {
 
 The data needs to be correct in the brackets, although you can make use of the "Var" keyword instead of "double"
 
+**Lists**
+
+```csharp
+using System.Collections.Generic;
+
+List<double> grades  = new List<double>();
+        	grades.Add(43.2);
+
+```
+
