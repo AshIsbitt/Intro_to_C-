@@ -117,3 +117,61 @@ List<double> grades  = new List<double>();
 
 ```
 
+### Classes and Objects
+
+Creating a new class is as simple as writing
+
+```csharp
+namespace GradeBook{
+    
+    class Book {
+
+    }
+}
+```
+
+and calling the class just uses the class's name. Generally, you create a new file for each class.
+
+The new file will also need a namespace, which is also often the name of the directory.
+
+**Defining methods**
+
+```csharp
+public void AddGrade(double grade) {
+
+}
+```
+
+- public/private - this is the level of access that the method has 
+- static - this means that the class is related to the class, not to the object. You need to call the class, not the object, to run this method.
+- void - this means that the method doesn't return a value. Omit this is you're writing a method that would use the python "return" command
+AddGrade - this is the name of the method
+- double grade - this is the single arguement the method is expecting to be passed, a double, which it is storing in the name "grade"
+
+Class attributes get written within the curly braces of the class, but outside of the methods. 
+
+```csharp
+class Book {
+    //Attributes go out here
+    List<double> grades;
+
+    public void AddGrade(double grade) 
+    {
+
+    }
+}
+```
+
+**Initialising attributes**
+
+We need a constructor method to initialise our attributes within the class. Otherwise, nothing will run correctly.
+
+To do this, we have a new public method with the same name as the class, and within this, we create the variable.
+
+```csharp
+public Book()
+    {
+        grades = new List<double>();
+    }
+```
+
