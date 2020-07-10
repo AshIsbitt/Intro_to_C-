@@ -175,3 +175,30 @@ public Book()
     }
 ```
 
+### Unit Testing
+
+Keep your unit testing code in a separate folder so it doesn't mess with the source code.
+
+```
+- Project
+    - src
+        - GradeBook
+    - test
+        - GradeBook.Tests
+```
+
+within the "test" directory, run `dotnet new xunit` to set up a directory ready for the test code.
+
+Unit tests appear as standard C# code, but has [Fact] over each method. 
+
+Unit tests are often broken up into three parts
+
+- arrange - where the test data is organised and values are set
+- act - where any computation/calculations are done to come up with a specific result
+- assert - where the result of the act is compared with the data in the arrange.
+
+You will need to add a reference to the tests folder to let it access the classes in the src folder. This can be done with dotnet, or within the csharp code. 
+`dotnet add reference <path>` - when doing it this way, the <path> is written within the Gradebook.Tests folder, and references the csproj file in the src folder.
+
+You may also need to return to the Book class and make it a public class. Otherwise, it won't be accessible from the tests folder. 
+

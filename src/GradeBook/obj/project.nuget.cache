@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PlbWbmcyQ2KiNKWREBxLCjnC3badmqsLsJLfuvioTPneN1rqnkqJvl76GLRJRKyeb1NdXD/8VwKdH7UBpIJicA==",
+  "dgSpecHash": "4gH2Cawh+5sqdPIYVkZ4spBSWe1THCZN20Rhh9G1PgYYwZdvi/qZ3G35tD8vAM2Unckz6Y+JbY3tBPc+QS1avw==",
   "success": true,
-  "projectFilePath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj",
+  "projectFilePath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

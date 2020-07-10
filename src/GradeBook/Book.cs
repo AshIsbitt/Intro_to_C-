@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace GradeBook
 {
 	
-	class Book 
+	public class Book 
 	{
 		//explicit constructor to init the "grades" var
 		//convention is that it has no return type (no void)
@@ -26,26 +26,24 @@ namespace GradeBook
 			grades.Add(grade);
 		}
 
-		public void showStats() 
+		public Statistics getStats() 
 		{
-			var result = 0.0;
-            var highGrade = double.MinValue;
-            var lowGrade = double.MaxValue;
+			var result = new Statistics();
+			result.Average = 0.0;
+			result.High = double.MinValue;
+			result.Low = double.MaxValue;
 
-        	foreach(var number in grades) 
+        	foreach(var grade in grades) 
         	{
-                highGrade = Math.Max(number, highGrade);
-                lowGrade = Math.Min(number, lowGrade);
-                result += number;
+                result.Low = Math.Min(grade, result.Low);
+                result.High = Math.Max(grade, result.High);
+                result.Average += grade;
         	}
 
         	//Get the average by dividing by the number of items in the List 
-        	result /= grades.Count;
+        	result.Average /= grades.Count;
 
-        	//result:N1 is a formatted version of result, with only 1 DP
-        	Console.WriteLine($"The average grade is {result:N1}");
-            Console.WriteLine($"The highest grade is {highGrade:N1}");
-            Console.WriteLine($"The lowest grade is {lowGrade:N1}");
+        	return result;
 		}
 	}
 }

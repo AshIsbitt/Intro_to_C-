@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj": {}
+    "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj": {}
   },
   "projects": {
-    "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj": {
+    "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj",
-        "projectName": "GradeBook",
-        "projectPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj",
+        "projectUniqueName": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj",
+        "projectName": "Gradebook",
+        "projectPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj",
         "packagesPath": "/Users/ashisbitt/.nuget/packages/",
         "outputPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/",
         "projectStyle": "PackageReference",

@@ -12,7 +12,12 @@ namespace GradeBook
             book.AddGrade(40.6);
             book.AddGrade(91.3);
 
-            book.showStats();
+            var stats = book.getStats();
+
+            //result:N1 is a formatted version of result, with only 1 DP
+            Console.WriteLine($"The average grade is {stats.Average:N1}");
+            Console.WriteLine($"The highest grade is {stats.High:N1}");
+            Console.WriteLine($"The lowest grade is {stats.Low:N1}");
         }	
     }
 }
