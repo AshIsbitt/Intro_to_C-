@@ -13,12 +13,12 @@ namespace GradeBook
 		{
 			grades = new List<double>();
 			//"this" refers to the object attribute called "name"
-			this.name = name;
+			Name = name;
 		}
 		
 		//Attributes go out here
 		List<double> grades ;
-		private string name;
+		public string Name;
 
 		//methods
 		public void AddGrade(double grade) 

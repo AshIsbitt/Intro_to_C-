@@ -202,3 +202,18 @@ You will need to add a reference to the tests folder to let it access the classe
 
 You may also need to return to the Book class and make it a public class. Otherwise, it won't be accessible from the tests folder. 
 
+### Reference and Value types
+
+Reference types are a type of variable that points to another place in memory that stores the data from the variable. 
+
+IE, you may have a variable "b", which only stores the number 1072, and item 1072 in RAM is where the data is stored that the code things is in the variable.
+
+Value types commonlyonly include a number (int, double, float etc) - and are instead stored straight in the location the variable points to. 
+
+Solution files are used in DOTNET to run everything at once - the tests, and the main program. It' keeps track of everything.
+
+`dotnet new sln` to create the solution file
+
+`dotnet sln <.sln file> add <dir>` - this directs to the .csproj files you want to run.
+
+    

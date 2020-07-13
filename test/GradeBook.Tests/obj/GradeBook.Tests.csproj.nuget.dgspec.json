@@ -4,12 +4,12 @@
     "/Users/ashisbitt/Desktop/Intro_to_C#/test/GradeBook.Tests/GradeBook.Tests.csproj": {}
   },
   "projects": {
-    "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj": {
+    "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj",
-        "projectName": "Gradebook",
-        "projectPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj",
+        "projectUniqueName": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj",
+        "projectName": "GradeBook",
+        "projectPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj",
         "packagesPath": "/Users/ashisbitt/.nuget/packages/",
         "outputPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/obj/",
         "projectStyle": "PackageReference",
@@ -75,8 +75,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj": {
-                "projectPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/Gradebook.csproj"
+              "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj": {
+                "projectPath": "/Users/ashisbitt/Desktop/Intro_to_C#/src/GradeBook/GradeBook.csproj"
               }
             }
           }
