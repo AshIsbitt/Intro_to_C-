@@ -208,7 +208,7 @@ Reference types are a type of variable that points to another place in memory th
 
 IE, you may have a variable "b", which only stores the number 1072, and item 1072 in RAM is where the data is stored that the code things is in the variable.
 
-Value types commonlyonly include a number (int, double, float etc) - and are instead stored straight in the location the variable points to. 
+Value types commonly only include a number (int, double, float etc) - and are instead stored straight in the location the variable points to. 
 
 Solution files are used in DOTNET to run everything at once - the tests, and the main program. It' keeps track of everything.
 
@@ -216,4 +216,8 @@ Solution files are used in DOTNET to run everything at once - the tests, and the
 
 `dotnet sln <.sln file> add <dir>` - this directs to the .csproj files you want to run.
 
-    
+**Struct**
+
+A Struct is written directly within the namespace, outside of a class, and is considered a separate data type that can be more efficient that reference data types.
+
+k

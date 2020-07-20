@@ -4,8 +4,26 @@ using Xunit;
 
 namespace GradeBook.Tests
 {
+
+    public struct Point
+    {}
+
     public class TypeTest
     {
+
+        [Fact]
+        public void Test1()
+        {
+            var x = GetInt();
+
+            Assert.Equal(3, x);
+        }
+
+        private int GetInt()
+        {
+            return 3;
+        }
+
         [Fact]
         public void GetBookReturnsDiffObjects()
         {
