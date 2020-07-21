@@ -220,4 +220,123 @@ Solution files are used in DOTNET to run everything at once - the tests, and the
 
 A Struct is written directly within the namespace, outside of a class, and is considered a separate data type that can be more efficient that reference data types.
 
-k
+### Controlling the Flow of Execution
+
+**IF statements**
+
+```csharp
+if (conditional)
+{
+    do something
+}
+else if (new conditional)
+{
+    do something else
+}
+else 
+{
+    do even more
+}
+```
+
+**Boolean Operators**
+
+&& AND
+|| OR
+== EQUAL TO
+
+**Loops**
+
+There are three different versions of loops, and each one is more useful in different situations.
+
+```csharp
+foreach(var x in y)
+{
+    do something
+}
+
+do
+{
+    something
+    condition++
+} while (conditional);
+
+//start, stop, do after each loop
+for(var i = 0; i < value; i++;)
+{
+
+}
+```
+
+**Jumping Statements**
+
+These allow for you to jump over a line of code to get to another.
+
+The most used one of these is a `break` command, often used within an IF statement in a FOR loop, allowing you to break out of the loop if a condition is met early.
+
+`Continue` instead will exit out of that specific loop and will run back to the top of the FOR statement.
+
+`GOTO` is also possible, but very uncommon to actually use. The tag added to GOTO ends in a colon, not a semicolon.
+
+```csharp
+foreach {
+    if(x == 2)
+    {
+        goto finish;
+    }
+}
+
+finish:
+```
+
+**Switch case**
+
+These allow you to use a single statement to perform a task based on the content of a variable. This can be used differently to an IF statement.
+
+```csharp
+switch(letter)
+{
+    case 'A':
+        AddGrade(90);
+        break;
+    case 'B':
+        AddGrade(80);
+        break;
+    case 'C':
+        AddGrade(70);
+        break;
+    case 'D':
+        AddGrade(60);
+        break;
+    default:
+        AddGrade(0);
+        break;
+
+}
+```
+In the above example,the contents of the char variable "letter" is being tested.
+
+```csharp
+switch(result.Average)
+{
+    case var d when d >= 90.0:
+        result.Letter = 'A';
+        break;
+    case var d when d >= 80.0:
+        result.Letter = 'B';
+        break;
+    case var d when d >= 70.0:
+        result.Letter = 'C';
+        break;
+    case var d when d >= 60.0:
+        result.Letter = 'D';
+        break;
+    default:
+        result.Letter = 'F';
+        break;
+
+}
+```
+
+This is a more advanced use of the Switchcase, that allows you to store the variable you're giving it in the var D and test it against a condition.
+
