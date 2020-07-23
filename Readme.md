@@ -340,3 +340,31 @@ switch(result.Average)
 
 This is a more advanced use of the Switchcase, that allows you to store the variable you're giving it in the var D and test it against a condition.
 
+```csharp
+var input = Console.ReadLine()
+```
+
+This line of code above acts like a python `input` command.
+
+###Error Handling
+
+```csharp
+throw new ArgumentException($"Invalid grade");
+```
+
+This line is a basic exception error in C#. Note that this is creating the error, not handling it. 
+
+```csharp
+try
+{
+    do something
+}
+catch(Exception e)
+{
+    Console.WriteLine(e.Message);
+}
+```
+
+This example of a TRY/CATCH code block will just output the exception message when you run into any error.
+
+You can also set "exception" to a specific error type.

@@ -51,6 +51,12 @@ namespace GradeBook
 			{
 				grades.Add(grade);
 			}
+			else
+			{
+				//Console.WriteLine("Invalid Value");
+
+				throw new ArgumentException($"Invalid grade");
+			}
 
 		}
 
