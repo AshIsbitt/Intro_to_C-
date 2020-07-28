@@ -346,7 +346,7 @@ var input = Console.ReadLine()
 
 This line of code above acts like a python `input` command.
 
-###Error Handling
+### Error Handling
 
 ```csharp
 throw new ArgumentException($"Invalid grade");
@@ -363,8 +363,40 @@ catch(Exception e)
 {
     Console.WriteLine(e.Message);
 }
+finally
+{
+    do this if try or catch triggers
+}
 ```
 
 This example of a TRY/CATCH code block will just output the exception message when you run into any error.
 
 You can also set "exception" to a specific error type.
+
+### Building Types
+
+Method overloading is the process of allowing for multiple methods with the same name.
+
+This works because the compiler is looking at the "method signature" - including the identifier, the arguements, and the arguement types. (IE, the "char letter" in AddLetterGrade)
+
+Methods can also have properties, which are similar to fields that can store data. However, they use different syntax.
+
+Properties of a class are basically just Getters and Setters:
+
+```csharp
+public string Name 
+{
+    get
+    {
+        return name;
+    }
+    set
+    {
+        if(String.IsNullorEmpty(value))
+        {
+            name = value;   
+        }
+    }
+}
+```
+

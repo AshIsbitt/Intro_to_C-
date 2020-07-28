@@ -15,10 +15,6 @@ namespace GradeBook
 			//"this" refers to the object attribute called "name"
 			Name = name;
 		}
-		
-		//Attributes go out here
-		List<double> grades ;
-		public string Name;
 
 		public void AddLetterGrade(char letter)
 		{
@@ -99,6 +95,18 @@ namespace GradeBook
 
         	return result;
 		}
+
+		//Attributes go out here
+		private List<double> grades;
+		private string name;
+
+		public string Name 
+		{
+			get; 
+			set;
+		}
+		
+		readonly string category = "Science";
 	}
 }
 
