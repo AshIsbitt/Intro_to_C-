@@ -381,9 +381,11 @@ This works because the compiler is looking at the "method signature" - including
 
 Methods can also have properties, which are similar to fields that can store data. However, they use different syntax.
 
-Properties of a class are basically just Getters and Setters:
+Properties of a class are basically just Getters and Setters for a private variable. In this example, the private string `name` is affected by the public property `Name`
 
 ```csharp
+private string name;
+
 public string Name 
 {
     get
@@ -398,5 +400,37 @@ public string Name
         }
     }
 }
+```
+
+If all you want to do is directly read and write to a variable, without performing any logic on it, C# allows for this syntax as well:
+
+```csharp
+public string Name 
+{
+    get; set;
+}
+```
+
+This is called an autoproperty.
+
+The get and set fields can separately be given private roles as well. 
+
+```csharp
+public string Name 
+{
+    get; 
+    private set;
+}
+```
+
+Another type of variable can be set to readonly.
+
+Constants are even more strict than readonly lines. However, it's acceptable to set the constant to public, so that they can be read elsewhere in the code. 
+It's a standard to set constants to all capitals
+
+```csharp
+readonly string category = "Science";
+
+public const string CATEGORY = "Science";
 ```
 
