@@ -434,3 +434,25 @@ readonly string category = "Science";
 public const string CATEGORY = "Science";
 ```
 
+### Object Oriented Programming
+
+- Encapsulation
+- Inheritance
+- Polymorphism
+
+Inheritance allows you to create a base class, and then build on it with other derived classes. 
+
+```csharp
+public class Child : Parent
+{
+    public Book(string name) : base("")
+    {
+
+    }
+}
+```
+
+The DRY principle
+DONT REPEAT YOURSELF.
+
+Each class should be in it's own file to keep your files organised.

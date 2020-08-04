@@ -6,12 +6,26 @@ namespace GradeBook
 
 	public delegate void GradeAddedDelegate(object sender, EventArgs args);
 	
-	public class Book 
+	public class NamedObject
+	{
+		public NamedObject(string name)
+		{
+			Name = name;
+		}
+
+		public string Name
+		{
+			get;
+			set;
+		}
+	}
+
+	public class Book : NamedObject
 	{
 		//explicit constructor to init the "grades" var
 		//convention is that it has no return type (no void)
 		//and has the same name as the class
-		public Book(string name)
+		public Book(string name) : base(name)
 		{
 			grades = new List<double>();
 			//"this" refers to the object attribute called "name"
@@ -106,13 +120,6 @@ namespace GradeBook
 
 		//Attributes go out here
 		private List<double> grades;
-		private string name;
-
-		public string Name 
-		{
-			get; 
-			set;
-		}
 		
 		readonly string category = "Science";
 	}
