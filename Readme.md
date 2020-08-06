@@ -456,3 +456,10 @@ The DRY principle
 DONT REPEAT YOURSELF.
 
 Each class should be in it's own file to keep your files organised.
+
+**Abstract classes**
+They're created by using the word "abstract" before "class" in the class definition line.
+
+You can also have an abstract method.
+
+Interfaces are another type of 

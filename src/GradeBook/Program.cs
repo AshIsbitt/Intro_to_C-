@@ -7,20 +7,31 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var book = new Book("My Grades");
+            var book = new InMemoryBook("My Grades");
             book.GradeAdded += OnGradeAdded;
 
-            var done = false;
+            EnterGrades(book);
 
-            while(!done)
+            var stats = book.getStats();
+
+            //result:N1 is a formatted version of result, with only 1 DP
+            Console.WriteLine($"For the book named {book.Name}:");
+            Console.WriteLine($"The average grade is {stats.Average:N1}");
+            Console.WriteLine($"The highest grade is {stats.High:N1}");
+            Console.WriteLine($"The lowest grade is {stats.Low:N1}");
+            Console.WriteLine($"The letter grade is {stats.Letter}");
+        }
+
+        private static void EnterGrades(IBook book)
+        {
+            while(true)
             {
                 Console.WriteLine("Enter a grade, or 'q' to quit");
                 var input = Console.ReadLine();
 
                 if (input == "q")
                 {
-                    done = true;
-                    continue;
+                    break;
                 }
 
                 try
@@ -41,16 +52,7 @@ namespace GradeBook
                     Console.WriteLine("*");
                 }
             }
-
-            var stats = book.getStats();
-
-            //result:N1 is a formatted version of result, with only 1 DP
-            Console.WriteLine($"For the book named {book.Name}:");
-            Console.WriteLine($"The average grade is {stats.Average:N1}");
-            Console.WriteLine($"The highest grade is {stats.High:N1}");
-            Console.WriteLine($"The lowest grade is {stats.Low:N1}");
-            Console.WriteLine($"The letter grade is {stats.Letter}");
-        }	
+        }
 
         static void OnGradeAdded(object sender, EventArgs e)
         {

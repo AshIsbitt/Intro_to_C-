@@ -20,12 +20,38 @@ namespace GradeBook
 		}
 	}
 
-	public class Book : NamedObject
+	public interface IBook
+	{
+		void AddGrade(Double grade);
+		statistics getStats();
+		string Name{ get; }
+		event GradeAddedDelegate GradeAdded;
+	}
+
+	public abstract class Book : NamedObject, IBook
+	{
+		public Book(string name) : base(name)
+		{
+
+		}
+
+		public abstract void AddGrade(double grade);
+
+		public event GradeAddedDelegate GradeAdded;
+
+		public statistics getStats()
+		{
+			throw new NotImplementedException();
+		}
+
+	}
+
+	public class InMemoryBook : Book, IBook
 	{
 		//explicit constructor to init the "grades" var
 		//convention is that it has no return type (no void)
 		//and has the same name as the class
-		public Book(string name) : base(name)
+		public InMemoryBook(string name) : base(name)
 		{
 			grades = new List<double>();
 			//"this" refers to the object attribute called "name"
@@ -56,7 +82,7 @@ namespace GradeBook
 		}
 
 		//methods
-		public void AddGrade(double grade) 
+		public override void AddGrade(double grade) 
 		{
 			
 			if(grade <= 100 && grade >= 0)
@@ -76,7 +102,7 @@ namespace GradeBook
 
 		}
 
-		public event GradeAddedDelegate GradeAdded;
+		public override event GradeAddedDelegate GradeAdded;
 
 		public Statistics getStats() 
 		{
